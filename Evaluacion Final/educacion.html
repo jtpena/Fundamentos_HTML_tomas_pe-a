@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Curriculum Vitae</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.svg" alt="logo hoja de vida" title="logo hoja de vida"height="60px" width="200px">
+        <h1 id="inicio">Curriculum Vitae</h1>
+        <a href="#final">Ir al Final</a>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="educacion.html">Educación</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+      </ul>
+    </nav>
+    <section>
+      <h2>Información Personal</h2>
+      <ul>
+        <li><h3>Nombres: <em>Jose Tomas</em> </h3></li>
+        <li><h3>Apellidos: <em>Peña Romero</em></h3></li>
+        <li><h3>Edad: <em>23</em></h3></li>
+        <li><h3>Fecha de Nacimiento:<em> 08 mayo 1994</em></h3></li>
+        <li><h3>Lugar de Nacimineto:<em> Colombia-Bogota</em></h3></li>
+      </ul>
+      <h2>Educación</h2>
+      <table border="1" width="600px" >
+        <thead>
+          <tr>
+            <th>Año</th>
+            <th>Institución</th>
+            <th>Lugar</th>
+            <th>¿Culminó?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2017</td>
+            <td>San mateo</td>
+            <td>Bogota</td>
+            <td>Si</td>
+          </tr>
+          <tr>
+            <td>2016</td>
+            <td>Microsoft</td>
+            <td>Bogota</td>
+            <td>Si</td>
+          </tr>
+        </tbody>
+      </table>
+      <form action="#" method="post" >
+        <fieldset  style="width:574px;">
+          <h3>Agregar Estudios</h3>
+          <legend>Registrar Datos</legend>
+          <label for="año"><strong>Año</strong></label>
+          <select  name="año">
+            <option value="1">2017</option>
+            <option value="2">2016</option>
+            <option value="3">2015</option>
+            <option value="4">2014</option>
+            <option value="5">2015</option>
+          </select><br><br>
+          <label for="universidad"><strong>Institución</strong></label>
+          <input type="text" name="universidad" placeholder="Ej: San mateo" required  ><br><br>
+          <label for="universidad"><strong>Lugar</strong></label><br>
+          <textarea rows="4" cols="50"></textarea><br><br>
+          <label for="culmino"><strong>¿Culminó?</strong></label>
+          <input type="radio" name="genre"> Si
+			    <input type="radio" name="genre"> No
+          <p>
+              <input type="submit" value="Enviar">
+          </p>
+        </fieldset>
+      </form>
+    </section>
+    <a href="#inicio">Volver al inicio</a>
+    <footer>
+        <h6>Informacion de Contacto</h6>
+        <ul id="final">
+          <li><strong>Correo:</strong>tomas@gmail.com</li>
+          <li><strong>Telefono:</strong>3175076909</li>
+        </ul>
+    </footer>
+  </body>
+</html>
